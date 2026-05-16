@@ -12,3 +12,6 @@ cd src\backend\app
 
 # 5. Run the server! Since you added the uvicorn.run block in the code, you can just do:
 python main.py
+
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
