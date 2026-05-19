@@ -17,6 +17,8 @@ This setup uses an Ubuntu Server as an **Ansible Control Node** to automatically
 # 1. Enable the WinRM service to allow Ansible connections
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $url = "https://raw.githubusercontent.com/ansible/ansible-documentation/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString($url))
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $url = "https://raw.githubusercontent.com/ansible/ansible-documentation/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString($url))
+
 # 2. Set the Administrator password to 'user'
 net user Administrator user
 
