@@ -123,5 +123,10 @@ class BackendClient:
             response = requests.post(self.base_url, json=event_dict, timeout=3)
             print(f"[+] Log sent! Server replied: {response.status_code}")
         except Exception as e:
+
+
+
+
+        New-NetFirewallRule -DisplayName "EDR Backend Port 8000" -Direction Inbound -LocalPort 8000 -Protocol TCP -Action Allow -Profile Any
             print(f"[-] Failed to route to backend: {e}")
 
