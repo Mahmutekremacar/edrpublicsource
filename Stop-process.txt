@@ -1,8 +1,9 @@
 Stop-Process -Name "python" -Force -ErrorAction SilentlyContinue
 
+Set-ExecutionPolicy Bypass -Scope Process -Force
 
-Import-Module .\Invoke-AtomicRedTeam.psd1 -Force
 
+Import-Module .\Invoke-AtomicRedTeam.psm1 -Force
 
 
 Invoke-AtomicTest T1105 -TestNumbers 1
