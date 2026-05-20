@@ -1,1 +1,5 @@
 Stop-Process -Name "python" -Force -ErrorAction SilentlyContinue
+
+
+
+Invoke-AtomicTest T1105 -TestNumbers 1
